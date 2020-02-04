@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="index.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Canvas</title>
+  </head>
+  <body
+    style="background-color: brown;"
+    onload="handl = setInterval('draw()', 100);"
+  >
+    <input id="radius" value="10" />
+    <button onclick="test()">test</button>
+    <span id="volume"></span>
+    <canvas
+      id="myCanvas"
+      width="300"
+      height="150"
+      style="border: 1px solid #d3d3d3;"
+    >
+    </canvas>
+    <button onclick="draw()">draw</button>
+    <button onclick="clean()">clean</button>
+  </body>
+</html>
